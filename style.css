@@ -1,0 +1,25 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+#container{
+	border: 3px solid dodgerblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	width: 50vw;
+
+}
+
+.grid {
+	display: flex;
+	flex: 0 1 6.25%; /*this property will need to change dinamically*/
+	background-color: dodgerblue;
+	aspect-ratio: 1 / 1;
+	border: 1px solid white;
+}

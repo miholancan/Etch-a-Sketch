@@ -40,7 +40,7 @@
 	margin-bottom: 1rem;
 }
 
-#sizeChanger {
+#sizeChanger, #resetGrid {
 	padding: 1rem;
 	background-color: dodgerblue;
 	color: white;
@@ -50,7 +50,7 @@
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-#sizeChanger:hover{
+#sizeChanger:hover, #resetGrid:hover{
 	background-color: pink;
 	cursor: pointer;
 	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);

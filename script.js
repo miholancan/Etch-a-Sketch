@@ -1,13 +1,23 @@
 const container = document.getElementById('container');
+let userInput = 16;
+//change grid size button
 const button = document.getElementById('sizeChanger');
 button.addEventListener('click', () => {
-	let userInput = prompt("Enter a number between 1 and 100");
+	userInput = prompt("Enter a number between 1 and 100");
 	while (userInput > 100 || userInput < 1) {
 		userInput = prompt("Wrong input. Please enter a number between 1 and 100")
 	}
 	container.textContent = '';
 	generateGrid(userInput);
 });
+
+//reset grid button
+const resetButton = document.getElementById('resetGrid');
+resetButton.addEventListener('click', () => {
+	container.textContent = '';
+	generateGrid(userInput);
+});
+
 function randomRGB(){
 	return 'rgb(' + Math.floor(Math.random() * 256) + (', ') + Math.floor(Math.random() * 256) + (', ') + Math.floor(Math.random() * 256) + ')';
 }

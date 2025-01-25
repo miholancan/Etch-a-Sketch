@@ -4,22 +4,61 @@
 	padding: 0;
 }
 
+#wrapper{
+	background-color: #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+}
 
 #container{
-	border: 3px solid dodgerblue;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
 	flex-wrap: wrap;
-	width: 50vw;
-
+	width: 40vw;
+	border-radius: 5rem;
 }
 
 .grid {
 	display: flex;
-	flex: 0 1 6.25%; /*this property will need to change dinamically*/
-	background-color: dodgerblue;
+	flex: 0 1;
+	background-color: white;
 	aspect-ratio: 1 / 1;
-	border: 1px solid white;
+	border: 0.1rem solid rgba(0, 0, 102, 0.1);
+	border-collapse: collapse;
 }
+
+#content{
+	display: flex;
+	min-width: 40vw;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+#sizeChanger {
+	padding: 1rem;
+	background-color: dodgerblue;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#sizeChanger:hover{
+	background-color: pink;
+	cursor: pointer;
+	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+#sketch {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	color: #fff;
+}
+
